@@ -1,0 +1,20 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Products\bf1470f0-079e-4fb0-8a31-9a6c4f8980165c487758-3da0-4840-b0e9-feea85c010a21-3.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>ShopNT.Api</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/ShopNT.Api</BasePath>
+      <RelativePath>Uploads/Products/bf1470f0-079e-4fb0-8a31-9a6c4f8980165c487758-3da0-4840-b0e9-feea85c010a21-3.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\Products\bf1470f0-079e-4fb0-8a31-9a6c4f8980165c487758-3da0-4840-b0e9-feea85c010a21-3.png))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

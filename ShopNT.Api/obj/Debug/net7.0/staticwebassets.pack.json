@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\umid_\\Desktop\\ApiN-tier\\ShopAPI\\ShopNT.Api\\wwwroot\\Uploads\\Products\\bf1470f0-079e-4fb0-8a31-9a6c4f8980165c487758-3da0-4840-b0e9-feea85c010a21-3.png",
+      "PackagePath": "staticwebassets\\Uploads\\Products\\bf1470f0-079e-4fb0-8a31-9a6c4f8980165c487758-3da0-4840-b0e9-feea85c010a21-3.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.ShopNT.Api.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.ShopNT.Api.props",
+      "PackagePath": "build\\ShopNT.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.ShopNT.Api.props",
+      "PackagePath": "buildMultiTargeting\\ShopNT.Api.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.ShopNT.Api.props",
+      "PackagePath": "buildTransitive\\ShopNT.Api.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
