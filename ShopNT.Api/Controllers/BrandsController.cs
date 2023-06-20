@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShopNT.Api.Dtos.BrandDtos;
 using ShopNT.Core.Entities;
@@ -13,11 +14,13 @@ namespace ShopNT.Api.Controllers
     {
        
         private readonly IBrandRepository _brandRepository;
+        private readonly IMapper _mapper;
 
-        public BrandsController(IBrandRepository brandRepository) 
+        public BrandsController(IBrandRepository brandRepository,IMapper mapper) 
         {
             
             _brandRepository = brandRepository;
+            _mapper = mapper;
         }
         [HttpGet("get/{id}")]
         public ActionResult<BrandGetItemDto> Get(int id)
@@ -26,20 +29,15 @@ namespace ShopNT.Api.Controllers
 
             if (data == null) return NotFound();
 
-            BrandGetItemDto brand = new BrandGetItemDto
-            {
-                Name = data.Name,
-            };
+            BrandGetItemDto brand = _mapper.Map<BrandGetItemDto>(data);
 
             return StatusCode(200, brand);
         }
         [HttpPost("create")]
         public IActionResult Create(BrandPostDto brandPostDto)
         {
-            Brand brand = new Brand
-            {
-                Name = brandPostDto.Name,
-            };
+            Brand brand = _mapper.Map<Brand>(brandPostDto);
+
             _brandRepository.Add(brand);
             _brandRepository.Commit();
 
@@ -78,7 +76,7 @@ namespace ShopNT.Api.Controllers
         [HttpGet("GetAll")]
         public ActionResult<List<BrandGetAllItemsDto>> GetAll()
         {
-            var data = _brandRepository.GetAllQueryable(x=>true).Select(x =>  new BrandGetAllItemsDto {Name=x.Name,Id=x.Id}).ToList();
+            var data = _mapper.Map<List<BrandGetAllItemsDto>>(_brandRepository.GetAll(x=>true));
 
             return Ok(data);
 

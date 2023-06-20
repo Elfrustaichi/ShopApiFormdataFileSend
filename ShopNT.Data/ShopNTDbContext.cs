@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using ShopNT.Core.Entities;
 using ShopNT.Data.Configurations;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ShopNT.Data
 {
-    public class ShopNTDbContext:DbContext
+    public class ShopNTDbContext:IdentityDbContext
     {
         public ShopNTDbContext(DbContextOptions<ShopNTDbContext> options):base(options)
         {
@@ -19,6 +20,8 @@ namespace ShopNT.Data
         public DbSet<Brand> Brands { get; set; }
 
         public DbSet<Product> Products { get; set; }
+
+        public DbSet<AppUser> AppUsers {get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

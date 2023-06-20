@@ -73,3 +73,7 @@ C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\FluentValid
 C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\MicroElements.Swashbuckle.FluentValidation.dll
 C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\ShopNT.Api.staticwebassets.runtime.json
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
