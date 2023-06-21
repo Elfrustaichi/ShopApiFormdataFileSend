@@ -1,0 +1,17 @@
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\bin\Debug\net7.0\ShopNT.Services.deps.json
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\bin\Debug\net7.0\ShopNT.Services.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\bin\Debug\net7.0\ShopNT.Services.pdb
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\bin\Debug\net7.0\ShopNT.Core.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\bin\Debug\net7.0\ShopNT.Data.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\bin\Debug\net7.0\ShopNT.Data.pdb
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\bin\Debug\net7.0\ShopNT.Core.pdb
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\ShopNT.Services.csproj.AssemblyReference.cache
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\ShopNT.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\ShopNT.Services.AssemblyInfoInputs.cache
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\ShopNT.Services.AssemblyInfo.cs
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\ShopNT.Services.csproj.CoreCompileInputs.cache
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\ShopNT.Services.csproj.CopyComplete
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\ShopNT.Services.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\refint\ShopNT.Services.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\ShopNT.Services.pdb
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\Shop.Services\obj\Debug\net7.0\ref\ShopNT.Services.dll

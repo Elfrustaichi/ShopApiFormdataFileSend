@@ -20,11 +20,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ShopNT.Data\ShopNT.Data.csproj" />
+    <Folder Include="wwwroot\Uploads\Products\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\Uploads\Products\" />
+    <ProjectReference Include="..\Shop.Services\ShopNT.Services.csproj" />
   </ItemGroup>
 
 </Project>

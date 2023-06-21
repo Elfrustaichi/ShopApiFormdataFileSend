@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using ShopNT.Api.Dtos.UserDtos;
+using ShopNT.Services.Dtos.UserDtos;
 using ShopNT.Core.Entities;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace ShopNT.Api.Controllers
+namespace ShopNT.Services.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

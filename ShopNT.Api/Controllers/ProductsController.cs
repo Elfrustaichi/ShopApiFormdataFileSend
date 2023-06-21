@@ -3,13 +3,13 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
-using ShopNT.Api.Dtos.ProductDtos;
-using ShopNT.Api.Helpers;
+using ShopNT.Services.Dtos.ProductDtos;
+using ShopNT.Services.Helpers;
 using ShopNT.Core.Entities;
 using ShopNT.Core.Repositories;
 
 
-namespace ShopNT.Api.Controllers
+namespace ShopNT.Services.Controllers
 {
     [Authorize(Roles ="Admin")]
     [Route("api/[controller]")]

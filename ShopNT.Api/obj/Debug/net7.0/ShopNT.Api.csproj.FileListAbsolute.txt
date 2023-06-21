@@ -77,3 +77,5 @@ C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\AutoMapper.
 C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\ShopNT.Services.dll
+C:\Users\umid_\Desktop\ApiN-tier\ShopAPI\ShopNT.Api\bin\Debug\net7.0\ShopNT.Services.pdb

@@ -6,20 +6,35 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using ShopNT.Api.Dtos.BrandDtos;
-using ShopNT.Api.Profiles;
+using ShopNT.Services.Dtos.BrandDtos;
+using ShopNT.Services.Profiles;
 using ShopNT.Core.Entities;
 using ShopNT.Core.Repositories;
 using ShopNT.Data;
 using ShopNT.Data.Repositories;
 using System.Text;
+using ShopNT.Services.Interfaces;
+using ShopNT.Services.Implementations;
+using ShopNT.Api.Middlewares;
+using Microsoft.AspNetCore.Mvc;
+using ShopNT.Services.Exceptions;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+builder.Services.AddControllers()
+    .ConfigureApiBehaviorOptions(options =>
+    {
+        options.InvalidModelStateResponseFactory = context =>
+        {
+            var errors = context.ModelState.Where(x => x.Value.Errors.Count() > 0)
+            .Select(x => new RestExceptionError(x.Key, x.Value.Errors.First().ErrorMessage)).ToList();
+
+            return new BadRequestObjectResult(new { message = "", errors });
+        };
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
@@ -83,6 +98,7 @@ builder.Services.AddValidatorsFromAssemblyContaining<BrandPostDtoValidator>();
 
 builder.Services.AddScoped<IBrandRepository,BrandRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IBrandService,BrandService>();
 
 builder.Services.AddAutoMapper(opt =>
 {
@@ -118,6 +134,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.MapControllers();
 
 app.Run();

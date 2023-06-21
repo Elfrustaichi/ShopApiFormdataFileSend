@@ -1,4 +1,4 @@
-﻿namespace ShopNT.Api.Helpers
+﻿namespace ShopNT.Services.Helpers
 {
     public static class FileManager
     {

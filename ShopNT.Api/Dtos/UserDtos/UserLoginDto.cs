@@ -1,7 +1,7 @@
 ﻿using FluentValidation;
 using System.Text.RegularExpressions;
 
-namespace ShopNT.Api.Dtos.UserDtos
+namespace ShopNT.Services.Dtos.UserDtos
 {
     public class UserLoginDto
     {
