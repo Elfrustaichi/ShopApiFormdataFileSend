@@ -18,6 +18,7 @@ using ShopNT.Services.Implementations;
 using ShopNT.Api.Middlewares;
 using Microsoft.AspNetCore.Mvc;
 using ShopNT.Services.Exceptions;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -93,17 +94,21 @@ builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
 
 builder.Services.AddFluentValidationRulesToSwagger();
 
+builder.Services.AddHttpContextAccessor();
+
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddValidatorsFromAssemblyContaining<BrandPostDtoValidator>();
 
 builder.Services.AddScoped<IBrandRepository,BrandRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IBrandService,BrandService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
-builder.Services.AddAutoMapper(opt =>
+builder.Services.AddScoped(provider =>
+new MapperConfiguration(opt =>
 {
-    opt.AddProfile(new MapperProfile());
-});
+    opt.AddProfile(new MapperProfile(provider.GetService<IHttpContextAccessor>()));
+}).CreateMapper());
 
 builder.Services.AddAuthentication(opt =>
 {
@@ -134,6 +139,7 @@ app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
+app.UseStaticFiles();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.MapControllers();
 

@@ -29,6 +29,11 @@ namespace ShopNT.Services.Exceptions
             Errors = new List<RestExceptionError> { };
             
         }
+        public RestException(HttpStatusCode code, List<RestExceptionError> errors)
+        {
+            Code = code;
+            Errors = errors;
+        }
         public HttpStatusCode Code { get; set; }
         public string Message {get;set;}
 

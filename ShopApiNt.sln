@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopNT.Core", "ShopNT.Core\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopNT.Data", "ShopNT.Data\ShopNT.Data.csproj", "{5613EC6E-2897-46D8-ABC8-8F44E394821C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopNT.Services", "Shop.Services\ShopNT.Services.csproj", "{EC04004F-A063-4DBE-9201-08F78B745F47}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopNT.Services", "Shop.Services\ShopNT.Services.csproj", "{EC04004F-A063-4DBE-9201-08F78B745F47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopNT.UI", "ShopNT.UI\ShopNT.UI.csproj", "{70B2C4B9-670E-4044-A6E5-65A9D1ED797C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{EC04004F-A063-4DBE-9201-08F78B745F47}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EC04004F-A063-4DBE-9201-08F78B745F47}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC04004F-A063-4DBE-9201-08F78B745F47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B2C4B9-670E-4044-A6E5-65A9D1ED797C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B2C4B9-670E-4044-A6E5-65A9D1ED797C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B2C4B9-670E-4044-A6E5-65A9D1ED797C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B2C4B9-670E-4044-A6E5-65A9D1ED797C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

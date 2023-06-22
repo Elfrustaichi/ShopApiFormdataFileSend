@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MhYsWV8aMA+8Is+tRU1I0Mnjj3mK8tabl9Qb2It47n0=",
+  "Hash": "IeibB/TCijvWbLaGeg4SAkHXsxvnwJ8p0x10wxcLYXY=",
   "Source": "ShopNT.Api",
   "BasePath": "_content/ShopNT.Api",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\umid_\\Desktop\\ApiN-tier\\ShopAPI\\ShopNT.Api\\wwwroot\\Uploads\\Products\\8e8ca610-78f1-4e1b-81f7-26ca24a50c5400ebadad-8e84-446c-a6ec-cd0f2723b32e1-3-570x633.jpg",
+      "SourceId": "ShopNT.Api",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\umid_\\Desktop\\ApiN-tier\\ShopAPI\\ShopNT.Api\\wwwroot\\",
+      "BasePath": "_content/ShopNT.Api",
+      "RelativePath": "Uploads/Products/8e8ca610-78f1-4e1b-81f7-26ca24a50c5400ebadad-8e84-446c-a6ec-cd0f2723b32e1-3-570x633.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\Products\\8e8ca610-78f1-4e1b-81f7-26ca24a50c5400ebadad-8e84-446c-a6ec-cd0f2723b32e1-3-570x633.jpg"
+    },
     {
       "Identity": "C:\\Users\\umid_\\Desktop\\ApiN-tier\\ShopAPI\\ShopNT.Api\\wwwroot\\Uploads\\Products\\bf1470f0-079e-4fb0-8a31-9a6c4f8980165c487758-3da0-4840-b0e9-feea85c010a21-3.png",
       "SourceId": "ShopNT.Api",
