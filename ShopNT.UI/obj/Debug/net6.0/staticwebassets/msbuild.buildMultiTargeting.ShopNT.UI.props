@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ShopNT.UI.props" />
+</Project>
