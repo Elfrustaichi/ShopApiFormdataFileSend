@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\umid_\\Desktop\\ApiN-tier\\ShopAPI\\ShopNT.Api\\wwwroot\\Uploads\\Products\\18f8a89e-0f59-4a36-b649-b629ae8002eb0dd7a02c-fbca-4fd2-bbc1-b9be14655c561-5-270x300.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\Products\\18f8a89e-0f59-4a36-b649-b629ae8002eb0dd7a02c-fbca-4fd2-bbc1-b9be14655c561-5-270x300.jpg"
+    },
+    {
       "Id": "C:\\Users\\umid_\\Desktop\\ApiN-tier\\ShopAPI\\ShopNT.Api\\wwwroot\\Uploads\\Products\\8e8ca610-78f1-4e1b-81f7-26ca24a50c5400ebadad-8e84-446c-a6ec-cd0f2723b32e1-3-570x633.jpg",
       "PackagePath": "staticwebassets\\Uploads\\Products\\8e8ca610-78f1-4e1b-81f7-26ca24a50c5400ebadad-8e84-446c-a6ec-cd0f2723b32e1-3-570x633.jpg"
     },

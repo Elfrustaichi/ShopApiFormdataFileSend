@@ -1,6 +1,10 @@
+using ShopNT.UI.Filters;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<AuthFilter>();
 
 var app = builder.Build();
 

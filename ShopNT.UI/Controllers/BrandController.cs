@@ -1,10 +1,12 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Net.Http.Headers;
 using Newtonsoft.Json;
+using ShopNT.UI.Filters;
 using ShopNT.UI.Models;
 
 namespace ShopNT.UI.Controllers
 {
+    [ServiceFilter(typeof(AuthFilter))]
     public class BrandController : Controller
     {
         private HttpClient _client;
@@ -18,7 +20,7 @@ namespace ShopNT.UI.Controllers
             var token = Request.Cookies["auth_token"];
             _client.DefaultRequestHeaders.Add(HeaderNames.Authorization, token);
 
-            using (var response = await _client.GetAsync("https://localhost:7171/api/Brands/all"))
+            using (var response = await _client.GetAsync("https://localhost:7143/api/Brands/GetAll"))
             {
                 if (response.IsSuccessStatusCode)
                 {
@@ -48,7 +50,7 @@ namespace ShopNT.UI.Controllers
             if (!ModelState.IsValid) return View();
 
             StringContent content = new StringContent(JsonConvert.SerializeObject(brand), System.Text.Encoding.UTF8, "application/json");
-            using (var response = await _client.PostAsync("https://localhost:7171/api/Brands", content))
+            using (var response = await _client.PostAsync("https://localhost:7143/api/Brands/create", content))
             {
                 if (response.IsSuccessStatusCode)
                     return RedirectToAction("Index");
@@ -74,7 +76,7 @@ namespace ShopNT.UI.Controllers
             var token = Request.Cookies["auth_token"];
             _client.DefaultRequestHeaders.Add(HeaderNames.Authorization, token);
 
-            using (var response = await _client.GetAsync($"https://localhost:7171/api/Brands/{id}"))
+            using (var response = await _client.GetAsync($"https://localhost:7143/api/Brands/get/{id}"))
             {
                 if (response.IsSuccessStatusCode)
                 {
@@ -100,7 +102,7 @@ namespace ShopNT.UI.Controllers
 
             var token = Request.Cookies["auth_token"];
             _client.DefaultRequestHeaders.Add(HeaderNames.Authorization, token);
-            using (var response = await _client.PutAsync($"https://localhost:7171/api/Brands/{id}", content))
+            using (var response = await _client.PutAsync($"https://localhost:7143/api/Brands/edit/{id}", content))
             {
                 if (response.IsSuccessStatusCode)
                     return RedirectToAction("Index");
@@ -125,7 +127,7 @@ namespace ShopNT.UI.Controllers
         {
             var token = Request.Cookies["auth_token"];
             _client.DefaultRequestHeaders.Add(HeaderNames.Authorization, token);
-            using (var response = await _client.DeleteAsync($"https://localhost:7171/api/Brands/{id}"))
+            using (var response = await _client.DeleteAsync($"https://localhost:7143/api/Brands/delete/{id}"))
             {
                 if (response.IsSuccessStatusCode)
                     return Ok();

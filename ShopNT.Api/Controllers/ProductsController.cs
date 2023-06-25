@@ -10,7 +10,7 @@ using ShopNT.Services.Interfaces;
 
 namespace ShopNT.Services.Controllers
 {
-    //[Authorize(Roles ="Admin")]
+    [Authorize(Roles ="Admin")]
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
